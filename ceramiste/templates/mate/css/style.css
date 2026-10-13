@@ -1,0 +1,481 @@
+/***************************************************************************************************
+ * © 2009 - Josette Taramarcaz
+ * author: Timothee Maret, timothee.maret@gmail.com
+ **************************************************************************************************/
+ 
+/* ----------------- HTML ELEMENTS OVERLOAD ----------------- */
+
+* { margin: 0; padding: 0; border: 0px;}
+
+h1 { font-size: 1.75em; margin: .67em 0 }
+h2 { font-size: 1.5em; margin: .75em 0 }
+h3 { font-size: 1.17em; margin: .83em 0 }
+h4, p, blockquote, ul, fieldset, form, ol, dl, dir, menu, cite { font-size: 1em; margin: 1.12em 0 }
+a { font-size: .83em; }
+h5 { font-size: .83em; margin: 1.5em 0 }
+h6 { font-size: .75em; margin: 1.67em 0 }
+cite{ display: block; position: relative; }
+ul {margin-left: 2em;}
+
+#frame #frame_body table.contentpaneopen { display: block; position: relative;}
+#frame #frame_body table.contentpaneopen tbody { display: block; position: relative;}
+#frame #frame_body table.contentpaneopen tbody tr { display: block; position: relative;}
+#frame #frame_body table.contentpaneopen tbody tr td { display: block; position: relative;}   
+#frame #frame_body table.contentpaneopen tbody tr th { display: block; position: relative;} 
+
+#frame #frame_body table.contentpaneopen table { display: table;				position: inherit; }
+#frame #frame_body table.contentpaneopen tbody tbody { display: table-row-group;	position: inherit; }
+#frame #frame_body table.contentpaneopen tbody tr tr    { display: table-row; 		position: inherit; }
+#frame #frame_body table.contentpaneopen tbody tr td td    { display: table-cell; 		position: inherit; }   
+#frame #frame_body table.contentpaneopen tbody tr th th    { display: table-cell; 		position: inherit; } 
+
+/* ----------------- GENERAL LAYOUT ----------------- */
+
+body { 
+	margin: 0px;
+	padding: 0px;
+	/*text-align: center;*/
+}
+
+#frame {
+	position: relative;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;		
+	border-left: solid 1px #d8d8d8;
+	border-right: solid 1px #d8d8d8;
+}
+
+#frame a {
+	color: #c5c29b;
+	text-decoration: underline;
+}
+
+#frame #frame_body { height: 350px; z-index: 0; position: relative; top: 0px; }
+html>body #frame #frame_body { height: auto; min-height: 350px ; }
+
+#frame #frame_body {
+	padding-left: 30px;
+	padding-right: 24px;
+	padding-top: 16px;
+	padding-bottom: 6px; 
+	background: white;
+	font-size: 9pt;
+	
+	background: #f2f2f2;
+}
+
+#frame #frame_footer {
+	padding: 6px;
+	background: #e0dada;
+	background: #8e2610; 
+	background: none;
+	border-top: solid 1px #d8d8d8;
+	border-bottom: solid 1px #d8d8d8;
+}
+
+/* Main menu */
+
+#frame #frame_header {
+	width: 100%;
+	height: auto;
+	padding-top: 76px;
+	background: #e0dada url(../images/specific/header.jpg) no-repeat 0px 0px;
+}
+
+#frame #frame_header #frame_header_menu ul#mainlevel {
+	margin: 0px;
+	padding: 0px;
+	height: 24px;
+	width: 100%;
+	background: white;
+	border-top: solid 1px #838383;
+	border-bottom: solid 1px #d8d8d8;
+}
+
+#frame #frame_header #frame_header_menu ul#mainlevel li {
+	list-style: none;
+	float: right;
+}
+
+
+#frame #frame_header #frame_header_menu ul#mainlevel li a {
+	font-weight: normal;
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	width: auto;
+	margin-right: 12px;
+	text-decoration: none;
+	color: #838383;
+	text-transform: uppercase;
+}
+
+#frame #frame_header #frame_header_menu ul#mainlevel li a:hover,
+#frame #frame_header #frame_header_menu ul#mainlevel li a#active_menu{
+	color: #838383;
+	border-bottom: solid 4px #838383;
+	height: 21px;
+}
+
+
+/* vbz */
+#theatre-vbz {
+	height: 360px;
+}
+
+#theatre-vbz div.theatre-vbz-entry {
+	display: block;
+	width: 90px;
+	float: left;
+	border-right: 1px solid white;
+	margin: 0px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding: 0px;
+}
+
+#theatre-vbz div.theatre-vbz-entry p {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width: 90px;
+	
+}
+
+#theatre-vbz .theatre-vbz-entry p a {
+	text-decoration: none;
+	text-align: left;
+	display: block;
+	height: 60px;
+	width: 70px;
+	margin: 0px;
+	padding: 10px;
+	padding-top: 280px;
+}
+
+#theatre-vbz #i1 { background: black url(/ceramiste/images/vbz/1.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i2 { background: black url(/ceramiste/images/vbz/2.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i3 { background: black url(/ceramiste/images/vbz/3.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i4 { background: black url(/ceramiste/images/vbz/4.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i5 { background: black url(/ceramiste/images/vbz/5.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i6 { background: black url(/ceramiste/images/vbz/6.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i7 { background: black url(/ceramiste/images/vbz/7.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i8 { background: black url(/ceramiste/images/vbz/8.jpg) no-repeat 0px 0px; }
+
+#theatre-vbz #i1:hover { background: grey url(/ceramiste/images/vbz/1.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i2:hover { background: grey url(/ceramiste/images/vbz/2.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i3:hover { background: grey url(/ceramiste/images/vbz/3.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i4:hover { background: grey url(/ceramiste/images/vbz/4.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i5:hover { background: grey url(/ceramiste/images/vbz/5.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i6:hover { background: grey url(/ceramiste/images/vbz/6.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i7:hover { background: grey url(/ceramiste/images/vbz/7.jpg) no-repeat 0px 0px; }
+#theatre-vbz #i8:hover { background: grey url(/ceramiste/images/vbz/8.jpg) no-repeat 0px 0px; }
+
+/*
+#frame #frame_header p {
+	position: absolute;
+	color: #cdcdcd;
+	font-size: 18pt;
+	background: none;
+	top: 20px;
+	left: 20px;
+	margin: 0;
+	padding: 0;
+}
+*/
+
+
+
+
+/*.contentpaneopen tbody { padding-right: 12px; }*/
+
+
+
+/* ----------------- GENERAL STYLE ----------------- */
+
+/* Gallery */
+
+#lbImage {
+	border: none;
+}
+
+#lbBottom {
+	border: none;
+}
+
+#lbCloseLink {
+	margin-right: 10px;
+}
+
+#lbCaption {
+	margin-top: 4px;
+	margin-left: 10px;
+}
+
+#lbNumber {
+	margin-bottom: 4px;
+	margin-left: 10px;
+}
+
+/* ActualitŽs */
+
+.thumbsup-image img {
+	margin-top: 4px;
+	padding: 4px;
+    background: black;
+    border: none;
+}
+
+.thumbsup-image a {
+    text-decoration: none !important;
+}
+
+.thumbsup-image {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	border: none;
+	width: 220px;
+	display: block;
+	padding: 6px;
+}
+
+.thumbsup-text {
+    border: none; 
+}
+
+.thumbsup-title {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+
+.thumbsup-intro {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.thumbsup-text a {
+    font-weight: normal;
+}
+
+.thumbsup-date {
+    font-weight: normal;
+    font-style: italic; 
+    font-size: 10px;
+    padding-bottom: 4px;
+}
+
+/* Biography */
+
+#listeexpos {
+	width: 100%;
+}
+
+/* Gallery */
+
+#frame #frame_body #galerie {
+	width: 100%;
+}
+
+#frame #frame_body #galerie td {
+	width: 50%;
+}
+
+#frame #frame_body #galerie td {
+	padding-bottom: 20px;
+}
+
+#frame #frame_body #galerie a img {
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+#frame #frame_body #galerie a.slimbox {
+	margin: 0;
+	padding: 1px;
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+#frame #frame_body #galerie tr > td { 
+  padding-left: 30px;
+}
+#frame #frame_body #galerie tr > td:first-child { 
+  padding-right: 30px;
+  padding-left: 0px;
+}
+
+
+/* Fonts */
+
+#frame, .boxplus-caption {	
+	/* font-family: "Myriad Pro", Tahoma, "Trebuchet MS", Verdana, sans-serif; */
+	/* 	font: normal 12pt/16pt "Adobe Garamond Pro", "Times New Roman", serif; */
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-align: justify;
+	text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	/*font-family: "Myriad Pro", Tahoma, "Trebuchet MS", Verdana, sans-serif;*/
+	font-variant: normal;
+	color: black;
+	font-style: normal;
+	font-weight: normal;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+/*
+#frame #frame_body a { 
+	font-family: "Myriad Pro", Tahoma, "Trebuchet MS", Verdana, sans-serif; 
+	font-weight: normal;
+}
+#frame #frame_body cite { padding-left: 18px; text-align: left; }
+
+*/
+
+/* Multipage selection */
+
+.contentpaneopen .pagenavcounter {
+	display: none; /* Do not display the page numbers */
+}
+/*
+.toclink {
+	margin-left: 0px;
+	display: block;
+	width: 100%;
+	height: 28px;
+	border-bottom: 2px solid;
+	position: relative;
+	margin-bottom: 34px;
+}
+
+.toclink li {
+	display: block;
+	float: left;
+}
+
+.toclink li a {
+	position relative;
+	display: block;
+	margin-right: 20px;
+	font-size: .83em;
+	display: block;
+	height: 28px;
+}
+
+.toclink li a:hover {
+	border-bottom: 4px solid;
+	height: 24px;
+}
+*/
+
+
+
+/* footer */
+/*
+#frame #frame_footer p { margin: 0px; padding: 0px; }
+#frame #frame_footer {
+	font-family: "Myriad Pro", Tahoma, "Trebuchet MS", Verdana, sans-serif;
+	font-size: .83em;
+}
+*/
+
+/* Misc */
+
+/* remove the navigation for multi-pages articles */
+/*
+#frame .pagenavcounter, 
+#frame .pagenavbar { display: none; }
+*/
+
+/*#frame .contentpaneopen .contentheading { display: none !important; }*/ /* remove article title */
+
+/* ----------------- DEFAULT PAGE ----------------- */
+
+/*
+
+#frame #frame_header {
+	background: #cfd404 url(../images/background.jpg) no-repeat 0px 0px;
+}
+
+*/
+a {
+	font-weight: bold;
+}
+
+/*
+.contentpaneopen tbody { padding-right: 8px; }
+
+#frame #frame_footer {
+	background: #cfd406;
+	color: black;
+}
+
+#frame #frame_body cite {
+	color: #a0a508;
+	margin-left: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#toclinker, a {
+	border-color: #a0a508;
+	color: #a0a508;
+}
+#frame #frame_footer a {
+	color: #ff001b;
+}
+
+a {
+	text-decoration: none;
+}
+
+#frame #frame_body table.blog tr {
+	display: block;
+	padding: 6px;
+	margin: 6px;
+}
+
+#frame #frame_body table.blog tbody {
+	border: solid 1px #a0a508;
+	width: 700px;
+}
+
+#frame #frame_body table.blog td.createdate {
+	border-bottom: solid 1px black;
+	font-family: "Myriad Pro", Tahoma, "Trebuchet MS", Verdana, sans-serif; 
+	font-weight: normal;
+}
+
+*/
+
+/*
+#frame #frame_body table.blog span.pagenav {
+}
+*/
+
+/* ----------------- FIRST PAGE ----------------- */
+
+
+
+
+/* ----------------- MISC ----------------- */
+
+.pdflink {
+        background:transparent url(../images/pdf.jpg) no-repeat scroll right 0px;
+        padding-right:25px;
+        padding-bottom: 10px;
+}
