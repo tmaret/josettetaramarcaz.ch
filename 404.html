@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><title>Josette Taramarcaz</title>
+<script>
+// Redirect old Joomla URLs (index.php?option=com_content&view=article&id=N) to the static pages
+(function () {
+  var pages = {"2": "biographie", "3": "contact", "4": "cours", "5": "expositions", "8": "actualite", "9": "scenographies"};
+  var m = /[?&]id=(\d+)/.exec(location.search);
+  var page = m && /view=article/.test(location.search) && pages[m[1]];
+  location.replace("/ceramiste/" + (page ? page + ".html" : ""));
+})();
+</script>
+</head><body><a href="/ceramiste/">Josette Taramarcaz – céramiste</a></body></html>
